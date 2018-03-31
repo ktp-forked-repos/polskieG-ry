@@ -1,169 +1,216 @@
-*
-{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body 
-{
+body {
     background: silver;
     height: 800vh;
     margin: 0px;
     padding: 0px;
 }
 
-.header
-{
+#scrollPos {
+    height: 1vh;
+    width: 100%;
+    background: red;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    transition: .5s linear;
+}
+
+.header {
     height: 90vh;
     background: url('../img/bg.jpg') center/cover no-repeat;
-    /* background-attachment: fixed; */
     padding: 30px;
 }
 
-.header h1  
-{
+.header h1 {
     text-align: center;
     font-size: 62px;
     padding-top: 50px;
     padding-bottom: 25px;
     color: rgb(0, 0, 0);
-    text-shadow: 0 0 5px rgba(247, 242, 242, 0.6);
-    
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
 }
 
-.header p
-{
+.header p {
     color: rgb(181, 242, 14);
     margin-top: 20px;
     text-align: center;
-    text-shadow: 0 0 5px rgba(0,0,0, .8);
+    text-shadow: 0 0 5px rgba(0, 0, 0, .8);
 }
 
-.section
-{
+.section {
     background: grey;
     height: 100vh;
-    
 }
 
-
-.section h2
-{
+.section h2 {
     font-size: 40px;
     text-align: center;
     padding: 90px;
     margin-bottom: 10px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
 }
 
-.section *:not(:first-child)
-{
+.section *:not(:first-child) {
     margin-top: 20px;
     text-align: justify;
 }
 
-.section:nth-child(even)
-{
+.section:nth-child(even) {
     background: silver;
 }
 
-.container
-{
+.container {
     max-width: 900px;
     margin: 0 auto;
-    font-size: 19px;    
+    font-size: 19px;
 }
 
-.section .container
-{
+.section .container {
     padding-left: 15%;
     width: 85%;
 }
 
-.containerNav
-{
+.containerNav {
     max-width: 980px;
     margin: 0 auto;
     font-size: 14px;
-    
-    
 }
 
-.nav
-{
-    line-height: 10vh;       
-      
+.nav {
+    line-height: 10vh;
 }
 
-.nav ul 
-{
+.nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    
 }
 
-.nav li
-{ 
+.nav li {
     width: 100%;
-    height: 100%;   
+    height: 100%;
 }
 
-.nav a
-{
+.nav a {
     border-radius: 8px 8px 0 0;
     text-align: center;
     display: block;
     text-decoration: none;
     border-right: dotted 1px white;
-
 }
 
-.nav a:first-child
-{
-   border-left: dotted 1px white;
+.nav a:first-child {
+    border-left: dotted 1px white;
 }
 
-.nav a:hover, .nav a:focus
-{
+.nav a:hover,
+.nav a:focus {
     background: rgb(204, 203, 203);
     border-right: dashed 1px rgb(49, 49, 49);
-    border-left:  dashed 1px rgb(49, 49, 49);
+    border-left: dashed 1px rgb(49, 49, 49);
     box-shadow: inset 0 0 10px rgb(71, 71, 71);
 }
 
-#tatry
-{
+#tatry {
     background: url('../img/tatry.jpg') center/cover no-repeat;
     background-attachment: fixed;
 }
 
-#bieszczady
-{
+#tatry p {
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .6);
+}
+
+#bieszczady {
     background: url('../img/bieszczady.jpg') center/cover no-repeat;
     background-size: cover;
 }
 
-#tatry p
-{
-    color: white;
+#bieszczady p {
+    color: rgb(255, 255, 255);
     margin-top: 20px;
     text-align: center;
-    text-shadow: 0 0 5px rgba(0,0,0, .6);
-    
+    text-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
-#bieszczady p
-{
-    color: rgb(77, 8, 68);
+#karkonosze {
+    background: url('../img/karkonosze.jpg') center/cover no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#karkonosze p {
+    color: rgb(255, 255, 255);
     margin-top: 20px;
     text-align: center;
-    text-shadow: 0 0 15px rgba(255, 255, 255, 1);
-    
+    text-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
-.sideMenu
-{
+#pieniny {
+    background: url('../img/pieniny.jpg') center/cover no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#pieniny p {
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+#gorce {
+    background: url('../img/gorce.jpg') center/cover no-repeat;
+    background-size: cover;
+}
+
+#gorce p {
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+#beskid {
+    background: url('../img/beskid.jpg') center/cover no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#beskid p {
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+#opacity {
+    background: rgb(135, 135, 135);
+    opacity: 1;
+}
+
+#swietokrzyskie {
+    background: url('../img/swietokrzyskie.jpg') center/cover no-repeat;
+    background-size: cover;
+}
+
+#swietokrzyskie p {
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+.sideMenu {
     position: fixed;
     top: 200px;
     left: 5px;
@@ -176,86 +223,71 @@ body
     border: solid 3px rgb(53, 52, 52);
 }
 
-.sideMenu li
-{
+.sideMenu li {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     justify-content: space-between;
     list-style: none;
     display: block;
     height: 5.95vh;
     text-align: center;
-    padding-top: 1.5vh;    
-    
+    padding-top: 1.5vh;
 }
 
+.sideMenu li:not(:last-child) {
+    border-bottom: dotted 1.2px rgb(255, 0, 0);
+}
 
-.sideMenu li:not(:last-child)
-{
-    border-bottom: dotted 1px black;
-} 
-
-.sideMenu a
-{
+.sideMenu a {
     color: rgb(4, 4, 50);
     text-decoration: none;
     display: block;
     width: 100%;
-    height: 100%;    
-    
+    height: 100%;
 }
 
-.sideMenuItem:hover:not(:last-child)
-{
-    
+.sideMenuItem:hover:not(:last-child) {
     background: rgba(253, 250, 250, 0.5);
-    -webkit-box-shadow: inset -1px -18px 18px -9px rgba(71,71,71,1);
-    -moz-box-shadow: inset -1px -18px 18px -9px rgba(71,71,71,1);
-    box-shadow: inset -1px -18px 18px -9px rgba(71,71,71,1);
+    -webkit-box-shadow: inset -1px -18px 18px -9px rgba(71, 71, 71, 1);
+    -moz-box-shadow: inset -1px -18px 18px -9px rgba(71, 71, 71, 1);
+    box-shadow: inset -1px -18px 18px -9px rgba(71, 71, 71, 1);
 }
 
-.sideMenuItem:hover:last-child 
-{
+.sideMenuItem:hover:last-child {
     border-radius: 0 0 9px 9px;
     background: rgba(253, 250, 250, 0.5);
-    -webkit-box-shadow: inset -1px -18px 18px -9px rgba(71,71,71,1);
-    -moz-box-shadow: inset -1px -18px 18px -9px rgba(71,71,71,1);
-    box-shadow: inset -1px -18px 18px -9px rgba(71,71,71,1);
+    -webkit-box-shadow: inset -1px -18px 18px -9px rgba(71, 71, 71, 1);
+    -moz-box-shadow: inset -1px -18px 18px -9px rgba(71, 71, 71, 1);
+    box-shadow: inset -1px -18px 18px -9px rgba(71, 71, 71, 1);
 }
 
-.sideMenuItem:hover:first-child 
-{
+.sideMenuItem:hover:first-child {
     border-radius: 8px 8px 0 0;
     background: rgba(253, 250, 250, 0.5);
-    -webkit-box-shadow: inset -1px -18px 18px -9px rgba(71,71,71,1);
-    -moz-box-shadow: inset -1px -18px 18px -9px rgba(71,71,71,1);
-    box-shadow: inset -1px -18px 18px -9px rgba(71,71,71,1);
+    -webkit-box-shadow: inset -1px -18px 18px -9px rgba(71, 71, 71, 1);
+    -moz-box-shadow: inset -1px -18px 18px -9px rgba(71, 71, 71, 1);
+    box-shadow: inset -1px -18px 18px -9px rgba(71, 71, 71, 1);
 }
 
-.active
-{
+.active {
     background: rgba(253, 250, 250, 0.9);
     box-shadow: inset 0 0 18px rgb(34, 34, 34);
-    
 }
 
-.active:first-child
-{
+.active:first-child {
     background: rgba(253, 250, 250, 0.9);
     box-shadow: inset 0 0 18px rgb(34, 34, 34);
     border-radius: 8px 8px 0 0;
 }
 
-.active:last-child
-{
+.active:last-child {
     background: rgba(253, 250, 250, 0.9);
     box-shadow: inset 0 0 18px rgb(34, 34, 34);
     border-radius: 0 0 8px 8px;
 }
 
-#scrollUp
-{
-    background: url('../img/up.jpg') center/cover no-repeat ;
+#scrollUp {
+    background: url('../img/up.jpg') center/cover no-repeat;
     width: 60px;
     height: 60px;
     position: fixed;

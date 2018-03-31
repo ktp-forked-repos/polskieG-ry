@@ -9,13 +9,13 @@ $(window).scroll(function() {
     var $gorce = $('#gorce').offset().top - 200 ;
     var $beskid = $('#beskid').offset().top - 200 ;
     var $swietokrzyskie = $('#swietokrzyskie').offset().top - 200 ;
+    var opacity = (( $(window).scrollTop() - 3311 )/ 100 - 1)/5;
+    var opacityC = opacity * (-1) + 2.5; 
 
-   
-   
     if ($position > 600 ) {
         $('#scrollUp').fadeIn();
         $('.sideMenu').fadeIn();
-        
+        $('#opacity').css('opacity', opacity);
     }
 
     if ($position < 600 ) {
@@ -62,14 +62,18 @@ $(window).scroll(function() {
         $('.sideMenu ul li').removeClass('active');
         $('.sideMenu ul li').addClass('sideMenuItem');
         $('.beskid').removeClass('sideMenuItem'); 
-        $('.beskid').addClass('active');       
+        $('.beskid').addClass('active');   
+        $('#opacity').css('opacity', opacityC);
+            
+        
     }
 
     if ($position > $swietokrzyskie) {
         $('.sideMenu ul li').removeClass('active');
         $('.sideMenu ul li').addClass('sideMenuItem');
         $('.swietokrzyskie').removeClass('sideMenuItem'); 
-        $('.swietokrzyskie').addClass('active');       
+        $('.swietokrzyskie').addClass('active');   
+        
     }
 })
 
@@ -86,15 +90,3 @@ $('#scrollUp').click(function() {
 })	  
     
 
-// ------------------------
-
-
-// $('.nav a').click(function(e) {
-//     var data = $(this).attr('data');
-//     console.log(data)
-    
-
-//     $(document).animate({
-//         scrollTop: $(this).attr('href').offset().top
-//     }, 1500);
-// })
